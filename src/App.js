@@ -1,8 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { ShoppingCart } from "./ShoppingCart";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <ShoppingCart />
+    </>
+  );
 }
 
 export default App;
