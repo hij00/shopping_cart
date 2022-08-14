@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import { ShoppingCart } from "./ShoppingCart";
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+export const Header = ({ itemCount }) => {
   return (
     <Wrap>
       <Logo>
         <Link to={"/"}>로고</Link>
       </Logo>
-      <Cart>
+      <Cart itemCount={itemCount}>
         <Link to={"/cart"}>장바구니</Link>
       </Cart>
     </Wrap>
