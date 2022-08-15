@@ -8,6 +8,7 @@ export const Main = ({ addToCart }) => {
       <ConWrap>
         {Db.map((con, i) => (
           <Wrap key={i}>
+            <Img />
             <Title>{con.product_name}</Title>
             <Price>{con.price}</Price>
             <AddBtn onClick={() => addToCart()}>장바구니 담기</AddBtn>
@@ -35,7 +36,7 @@ const ConWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  background-color: gray;
+  /* background-color: gray; */
 `;
 
 const Wrap = styled.div`
@@ -47,6 +48,12 @@ const Wrap = styled.div`
   &:nth-child(4n) {
     margin-right: 0;
   }
+`;
+
+const Img = styled.div`
+  width: 100%;
+  height: 200px;
+  background-color: gray;
 `;
 
 const Title = styled.div`

@@ -7,8 +7,10 @@ export const Header = ({ itemCount }) => {
       <Logo>
         <Link to={"/"}>로고</Link>
       </Logo>
-      <Cart itemCount={itemCount}>
-        <Link to={"/cart"}>장바구니</Link>
+      <Cart>
+        <Link to={"/cart"}>
+          장바구니<span>{itemCount}</span>
+        </Link>
       </Cart>
     </Wrap>
   );
@@ -29,4 +31,8 @@ const Wrap = styled.div`
 `;
 
 const Logo = styled.div``;
-const Cart = styled.div``;
+const Cart = styled.div`
+  .span {
+    color: crimson;
+  }
+`;

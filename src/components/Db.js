@@ -17,14 +17,14 @@ export const Db = [
   {
     isChecked: true,
     product_name: "랩12 20SS 오픈 카라/투 버튼 피케 티셔츠",
-    product_id: 4204,
+    product_id: 42054,
     product_img: "/images/piShirts.png",
     price: 103250,
   },
   {
     isChecked: true,
     product_name: "랩12 20SS 오픈 카라/투 버튼 피케 티셔츠",
-    product_id: 4204,
+    product_id: 42044,
     product_img: "/images/pants.png",
     price: 53250,
   },
