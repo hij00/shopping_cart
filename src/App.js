@@ -9,8 +9,6 @@ import { ShoppingCart } from "./components/pages/ShoppingCart";
 function App() {
   const [cartItem, setCartItem] = useState(Db);
 
-  // console.log(cartItem);
-
   const filterItem = (idx) => {
     setCartItem(
       cartItem.filter((_, i) => {

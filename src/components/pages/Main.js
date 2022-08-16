@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 import { Db } from "../Db";
 
 export const Main = ({ addToCart }) => {
+  useEffect(() => {
+    console.log("ProductList render");
+  });
+
   return (
     <SWrap>
       <STitle>상품목록</STitle>
